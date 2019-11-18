@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import "./App.css";
+import ToDoList from "./components/todoList";
+import { Header } from "./components/header";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Route path="/" exact component={Header}>
+            <Header className="home-container">
+              <h1>Good Morning Avery!</h1>
+              <img
+                src="https://media.giphy.com/media/jDiUeDQpIkGIM/giphy.gif"
+                alt="simba and mufasa looking out over their kingdom as the sun rises in the distance"
+              />
+              <Link to="/tasks">Tasks</Link>
+            </Header>
+          </Route>
+          <Route path="/tasks" exact component={ToDoList}>
+            <ToDoList />
+          </Route>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
