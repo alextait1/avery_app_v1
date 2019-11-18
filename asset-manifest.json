@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/avery_app/static/css/main.c421cb17.chunk.css",
+    "main.js": "/avery_app/static/js/main.8d157d13.chunk.js",
+    "main.js.map": "/avery_app/static/js/main.8d157d13.chunk.js.map",
+    "runtime-main.js": "/avery_app/static/js/runtime-main.55a4c363.js",
+    "runtime-main.js.map": "/avery_app/static/js/runtime-main.55a4c363.js.map",
+    "static/js/2.dd905df2.chunk.js": "/avery_app/static/js/2.dd905df2.chunk.js",
+    "static/js/2.dd905df2.chunk.js.map": "/avery_app/static/js/2.dd905df2.chunk.js.map",
+    "index.html": "/avery_app/index.html",
+    "precache-manifest.c9e266fc017e2ed5a685d2a7a2e12661.js": "/avery_app/precache-manifest.c9e266fc017e2ed5a685d2a7a2e12661.js",
+    "service-worker.js": "/avery_app/service-worker.js",
+    "static/css/main.c421cb17.chunk.css.map": "/avery_app/static/css/main.c421cb17.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55a4c363.js",
+    "static/js/2.dd905df2.chunk.js",
+    "static/css/main.c421cb17.chunk.css",
+    "static/js/main.8d157d13.chunk.js"
+  ]
+}
