@@ -15,7 +15,7 @@ class App extends React.Component {
                 src="https://media.giphy.com/media/jDiUeDQpIkGIM/giphy.gif"
                 alt="simba and mufasa looking out over their kingdom as the sun rises in the distance"
               />
-              <Link to="/tasks">Tasks</Link>
+              <Link to="/tasks">Let's Go!</Link>
             </Header>
           </Route>
           <Route path="/tasks" exact component={ToDoList}>

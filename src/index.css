@@ -189,7 +189,18 @@ code {
 }
 
 body {
-  background-color: seashell;
+  font-family: "Montserrat", sans-serif;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #70e1f5,
+    #ffd194
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #70e1f5,
+    #ffd194
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .wrapper {
   max-width: 1140px;
@@ -272,15 +283,14 @@ ul {
 .task-header {
   margin: 0;
   font-size: 3.5rem;
-  color: mediumvioletred;
+  color: #f1d19c;
   padding: 30px 0;
-  background-color: PALETURQUOISE;
-  border-radius: 4px;
+  background-color: dodgerblue;
+  /* border-radius: 4px; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
-  background-color: black;
   height: 100%;
   width: 100%;
 }
@@ -288,7 +298,8 @@ ul {
 .header-container h1 {
   margin: 0;
   font-size: 3.5rem;
-  color: mediumvioletred;
+  font-weight: bold;
+  color: black;
   padding: 30px 0;
 }
 
@@ -304,11 +315,18 @@ ul {
 
 a[href="/tasks"] {
   display: block;
-  color: mediumvioletred;
-  font-size: 2rem;
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
   padding: 30px 0;
+  transition: color 0.3s linear;
 }
 
 a[href="/tasks"]:hover {
-  color: pink;
+  color: mediumvioletred;
+}
+
+img.finished {
+  margin-top: 100px;
+  width: 80%;
 }
